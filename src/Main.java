@@ -67,7 +67,7 @@ public class Main {
 
     static void deleteEmployees() {
         System.out.print("Enter employee code to remove:");
-        double code = sc.nextDouble();
+        long code = sc.nextLong();
         for(int i = 0; i < userList.size(); i++) {
             if(userList.get(i).get(0).equals(code)) {
                 userList.remove(i);
