@@ -63,6 +63,7 @@ public class Main {
                 break;
             }
         }
+        System.out.println("No Employees Found!!!");
     }
 
     static void deleteEmployees() {
