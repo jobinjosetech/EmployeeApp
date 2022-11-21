@@ -7,7 +7,7 @@ public class Main {
     static void addEmployee(){
         ArrayList<Object> arr = new ArrayList<Object>();
         System.out.print("Enter employee code:");
-        double code = sc.nextDouble();
+        int code = sc.nextInt();
         System.out.print("Enter employee name:");
         String name = sc.next();
         System.out.print("Enter employee designation:");
@@ -17,7 +17,7 @@ public class Main {
         System.out.print("Enter company name:");
         String company = sc.next();
         System.out.print("Enter employee phone:");
-        double phone = sc.nextDouble();
+        int phone = sc.nextInt();
         System.out.print("Enter employee email:");
         String email = sc.next();
         arr.add(code);
@@ -63,7 +63,18 @@ public class Main {
                 break;
             }
         }
+    }
 
+    static void deleteEmployees() {
+        System.out.print("Enter employee code to remove:");
+        double code = sc.nextDouble();
+        for(int i = 0; i < userList.size(); i++) {
+            if(userList.get(i).get(0).equals(code)) {
+                userList.remove(i);
+                System.out.println("Employee removed successfully");
+                break;
+            }
+        }
     }
 
     public static void main(String[] args) {
@@ -88,6 +99,15 @@ public class Main {
                 case 3:
                     searchEmployees();
                     break;
+                case 4:
+                    deleteEmployees();
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid Choice");
+
             }
         }
     }
