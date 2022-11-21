@@ -7,7 +7,7 @@ public class Main {
     static void addEmployee(){
         ArrayList<Object> arr = new ArrayList<Object>();
         System.out.print("Enter employee code:");
-        int code = sc.nextInt();
+        long code = sc.nextLong();
         System.out.print("Enter employee name:");
         String name = sc.next();
         System.out.print("Enter employee designation:");
@@ -48,7 +48,7 @@ public class Main {
 
     static void searchEmployees() {
         System.out.print("Enter employee code:");
-        double code = sc.nextDouble();
+        long code = sc.nextLong();
         for(int i = 0; i < userList.size(); i++) {
             if(userList.get(i).get(0).equals(code)) {
                 System.out.println("------------------------------------------");
