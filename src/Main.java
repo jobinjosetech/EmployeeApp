@@ -31,6 +31,21 @@ public class Main {
         System.out.println("Employee Added Successfully");
     }
 
+    static void viewEmployees() {
+
+        for(int i = 0; i < userList.size(); i++) {
+            System.out.println("------------------------------------------");
+            System.out.println("Employee code "+ userList.get(i).get(0));
+            System.out.println("Employee name "+ userList.get(i).get(1));
+            System.out.println("Employee designation "+ userList.get(i).get(2));
+            System.out.println("Employee salary "+ userList.get(i).get(3));
+            System.out.println("Company name "+ userList.get(i).get(4));
+            System.out.println("Employee phone "+ userList.get(i).get(5));
+            System.out.println("Employee email "+ userList.get(i).get(6));
+            System.out.println("------------------------------------------");
+        }
+    }
+
     public static void main(String[] args) {
         while(true) {
             System.out.println("------------------ Menu ----------------------");
@@ -46,6 +61,9 @@ public class Main {
             switch (choice) {
                 case 1:
                     addEmployee();
+                    break;
+                case 2:
+                    viewEmployees();
                     break;
             }
         }
