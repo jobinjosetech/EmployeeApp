@@ -7,7 +7,7 @@ public class Main {
     static void addEmployee(){
         ArrayList<Object> arr = new ArrayList<Object>();
         System.out.print("Enter employee code:");
-        int code = sc.nextInt();
+        long code = sc.nextLong();
         System.out.print("Enter employee name:");
         String name = sc.next();
         System.out.print("Enter employee designation:");
@@ -17,7 +17,7 @@ public class Main {
         System.out.print("Enter company name:");
         String company = sc.next();
         System.out.print("Enter employee phone:");
-        int phone = sc.nextInt();
+        long phone = sc.nextLong();
         System.out.print("Enter employee email:");
         String email = sc.next();
         arr.add(code);
